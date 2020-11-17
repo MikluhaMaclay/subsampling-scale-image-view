@@ -1418,7 +1418,7 @@ public class SubsamplingScaleImageView extends View {
         PointF vTranslate = sat.vTranslate;
         float scale = limitedScale(sat.scale);
         float scaleWidth = scale * sWidth();
-        float scaleHeight = scale * sHeight();
+        float scaleHeight = scale * sHeight() + 400;
 
         if (panLimit == PAN_LIMIT_CENTER && isReady()) {
             vTranslate.x = Math.max(vTranslate.x, getWidth()/2 - scaleWidth);
