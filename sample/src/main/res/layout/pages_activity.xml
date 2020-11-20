@@ -4,15 +4,21 @@
 
         <ImageView style="@style/previousButton" android:id="@+id/previous" android:contentDescription="@string/button.previous"/>
 
-        <ImageView style="@style/nextButton" android:id="@+id/next" android:contentDescription="@string/button.next"/>
+        <ImageView
+            android:id="@+id/next"
+            style="@style/nextButton"
+            android:contentDescription="@string/button.next" />
 
-        <TextView style="@style/footerNote"
-                android:id="@+id/note"
-                android:layout_toStartOf="@id/next"
-                android:layout_toEndOf="@id/previous"/>
+        <TextView
+            android:id="@+id/note"
+            style="@style/footerNote"
+            android:layout_toStartOf="@id/next"
+            android:layout_toEndOf="@id/previous" />
 
     </RelativeLayout>
 
-    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView style="@style/mainPanel" android:id="@+id/imageView"/>
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/imageView"
+        style="@style/mainPanel"/>
 
 </RelativeLayout>
