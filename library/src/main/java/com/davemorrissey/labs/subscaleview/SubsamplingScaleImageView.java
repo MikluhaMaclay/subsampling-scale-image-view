@@ -1442,7 +1442,7 @@ public class SubsamplingScaleImageView extends View {
             maxTy = Math.max(0, getHeight()/2);
         } else if (center) {
             maxTx = Math.max(0, (getWidth() - scaleWidth) * xPaddingRatio);
-            maxTy = Math.max(0, (getHeight() - scaleHeight) * yPaddingRatio - 200);
+            maxTy = Math.max(0, (getHeight() - scaleHeight) * yPaddingRatio);
         } else {
             maxTx = Math.max(0, getWidth());
             maxTy = Math.max(0, getHeight());
