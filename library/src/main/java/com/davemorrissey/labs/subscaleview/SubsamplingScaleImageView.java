@@ -1817,8 +1817,8 @@ public class SubsamplingScaleImageView extends View {
         this.bitmap = bitmap;
         this.sWidth = bitmap.getWidth();
         this.sHeight = bitmap.getHeight();
-        if (sHeight / sWidth > 2f) {
-            this.sHeight = (int) (this.sHeight  * 0.8f);
+        if (sHeight / sWidth > 1.5f) {
+            this.sHeight = (int) (this.sHeight  * 1.3f);
         }
 
         this.sOrientation = sOrientation;
